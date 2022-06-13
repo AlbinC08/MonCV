@@ -19,17 +19,16 @@
 
       <div class="d-flex-column align-items-center justify-content-center" id="title">
         <p class="title">Cédric Albin</p>
-        <p>Welcome to my curriculum vitae</p>
+        <p id="welcome">bienvenue sur mon curriculum vitae</p>
       </div>
 
     </div>
-      <button onclick="dark()">light</button>
 
   </header>
 
   <nav class="rounded container-fluid navbar navbar-expand-lg navbar-light bg-secondary">
     <div class="container-fluid d-flex justify-content-center">
-      <a class="fw-bold text-warning navbar-brand active" aria-current="page" href="#">À propos de moi</a>
+      <a class="navtrad fw-bold text-warning navbar-brand active" aria-current="page" href="#">À propos de moi</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -37,21 +36,22 @@
       <div class="text-center collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="text-white nav-link" href="pages/compétences.html">compétences</a>
+            <a class="navtrad text-white nav-link" href="pages/compétences.html">compétences</a>
           </li>
           <li class="nav-item">
-            <a class="text-white nav-link" href="pages/expériences.html">expériences</a>
+            <a class="navtrad text-white nav-link" href="pages/expériences.html">expériences</a>
           </li>
           <li class="nav-item">
-            <a class="text-white nav-link" href="pages/Formations.html">Formations</a>
+            <a class="navtrad text-white nav-link" href="pages/Formations.html">Formations</a>
           </li>
           <li class="nav-item">
-            <a class="text-white nav-link" href="pages/contact.html">Contact</a>
+            <a class="navtrad text-white nav-link" href="pages/contact.html">Contact</a>
           </li>
 
         </ul>
       </div>
     </div>
+    <button onclick="trad()" type="button">traduction</button>
   </nav>
 
   <main>
@@ -71,8 +71,8 @@
             <div class="card">
               <img src="assets/images/carousel1.jpg" class="card-img-top d-block w-100" alt="Responsive image">
               <div class="card-body bg-dark text-white p-4">
-                <h4 class="fw-bold mb-1">À propos de moi</h4>
-                <p class="font-size">Passionné d'informatique depuis mon enfance, presque 30 ans, je souhaiterais
+                <h4 class="CarouTrad fw-bold mb-1">À propos de moi</h4>
+                <p class="CarouTrad font-size">Passionné d'informatique depuis mon enfance, presque 30 ans, je souhaiterais
                   désormais
                   en faire mon métier,Suite à mon expérience professionnel et personnel, je dispose d’un certain nombre
                   de qualités transposables dans le métier de développeur. Je suis quelqu’un d’organisé, rigoureux,
@@ -89,13 +89,13 @@
             <div class="card">
               <img src="assets/images/carousel2.jpg" class="card-img-top d-block w-100" alt="Responsive image">
               <div class="card-body bg-dark text-white p-4">
-                <h4 class="fw-bold mb-4">Profil</h4>
+                <h4 class="CarouTrad fw-bold mb-4">Profil</h4>
                 <div class="mb-4">
                   <ul class="font-size">
-                    <li>Dynamique</li>
-                    <li>Rigoureux</li>
-                    <li>Créatif</li>
-                    <li>Curieux</li>
+                    <li class="CarouTrad">Dynamique</li>
+                    <li class="CarouTrad">Rigoureux</li>
+                    <li class="CarouTrad">Créatif</li>
+                    <li class="CarouTrad">Curieux</li>
                   </ul>
                   <div class="d-flex justify-content-center p-2"><i class="fa-solid fa-code light"></i></div>
                 </div>
@@ -108,15 +108,15 @@
             <div class="card">
               <img src="assets/images/carousel3.jpg" class="card-img-top d-block w-100" alt="Responsive image">
               <div class="card-body bg-dark text-white p-4">
-                <h4 class="fw-bold mb-4">Centres d'intérêts</h4>
+                <h4 class="CarouTrad fw-bold mb-4">Centres d'intérêts</h4>
                 <div class="mb-4">
                   <ul class="font-size">
-                    <li>Informatique (hardware et
+                    <li class="CarouTrad">Informatique (hardware et
                       software), jeux vidéo</li>
-                    <li>Sciences, astronomie,
+                    <li class="CarouTrad">Sciences, astronomie,
                       technologie</li>
-                    <li>Bricolage, rénovation</li>
-                    <li>Nature, randonnée, musique</li>
+                    <li class="CarouTrad">Bricolage, rénovation</li>
+                    <li class="CarouTrad">Nature, randonnée, musique</li>
                   </ul>
                   <div class="d-flex justify-content-center p-2"><i class="hobbies fa-solid fa-code light"></i></div>
                 </div>
@@ -199,6 +199,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
